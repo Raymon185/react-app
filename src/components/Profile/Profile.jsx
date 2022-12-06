@@ -1,16 +1,12 @@
 import React from 'react';
 import s from './Profile.module.css';
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 import MyPosts from './MyPosts/MyPosts';
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div>
-      <div>
-        <img src='https://webneel.com/wallpaper/sites/default/files/images/08-2018/3-nature-wallpaper-mountain.1440.jpg' />
-      </div>
-      <div>
-        ava + description
-      </div>
+      <ProfileInfo />      
       <MyPosts />
     </div>
   )
